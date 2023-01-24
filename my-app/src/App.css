@@ -13,6 +13,24 @@
   }
 }
 
+.tab{
+  background-color: darkorange;
+  border: solid black;
+  border-radius: 20px;
+}
+
+#l1{
+  border-bottom: solid black;
+}
+
+#l2{
+
+}
+
+#l3{
+  border-top: solid black;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,6 +41,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
 
 .App-link {
   color: #61dafb;

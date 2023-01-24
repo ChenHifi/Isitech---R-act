@@ -32,17 +32,27 @@ function App() {
 
   return (
     <div className="App-header">
-      <p>{List.map((el)=>(
-        el.Date
-      ))}</p>
+      <div className="tab">
+        <div  id="l1">
+          <p>{List.map((el)=>(
+            el.Date
+          ))}</p>
+        </div>
 
-      <p>{List.map((el)=>(
-        el.Name
-      ))}</p>
+        <div id="l2">
+          <p>{List.map((el)=>(
+            el.Name
+          ))}</p>
+        </div>
 
-      <p>{List.map((el)=>(
-        el.Price
-      ))}</p>
+        <div id="l3">
+          <p>{List.map((el)=>(
+            el.Price
+          ))}</p>
+        </div>
+      </div>
+      
+
     </div>
   );
 }
