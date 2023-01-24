@@ -35,19 +35,19 @@ function App() {
       <div className="tab">
         <div  id="l1">
           <p>{List.map((el)=>(
-            el.Date
+            <li key={el.Date}>{el.Date}</li>
           ))}</p>
         </div>
 
         <div id="l2">
           <p>{List.map((el)=>(
-            el.Name
+            <li key={el.Name}>{el.Name}</li>
           ))}</p>
         </div>
 
         <div id="l3">
           <p>{List.map((el)=>(
-            el.Price
+            <li key={el.Price}>{el.Price}</li>
           ))}</p>
         </div>
       </div>

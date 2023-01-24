@@ -15,20 +15,26 @@
 
 .tab{
   background-color: darkorange;
-  border: solid black;
   border-radius: 20px;
+  display: flex;
+  list-style-type:none;
 }
 
 #l1{
-  border-bottom: solid black;
+  border: solid black;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  
 }
 
 #l2{
-
+  border: solid black;
 }
 
 #l3{
-  border-top: solid black;
+  border: solid black;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .App-header {
