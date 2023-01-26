@@ -14,10 +14,13 @@
 }
 
 .tab{
+  
   background-color: darkorange;
   border-radius: 20px;
   display: flex;
   list-style-type:none;
+  opacity: 0.33;
+  
 }
 
 #l1{

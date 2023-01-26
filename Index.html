@@ -7,11 +7,39 @@
 
         <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
             <script type="text/jsx">
-              const app = document.getElementById('app');
-              function header() {
-                
+              const app = document.getElementById("app");
+
+              function Header({title}){
+                return (<h1>{title ? title : 'Default title'}</h1>)
               }
-              ReactDOM.render(<h1>HTML cree avec React</h1>,app);
+
+              function Home() {
+                const names = ['OUI', 'NON', 'PEUT ETRE'];
+                {/* Voici un commentaire */}
+                const [compteur, setCompteur] = React.useState(0);
+
+                function handleClick() {
+                    setCompteur(compteur + 1);
+                    console.log(compteur)
+                }
+
+                return (
+                    <div>
+                        <Header title='React'/>
+
+                        <ul> 
+                            {names.map((name)=>(
+                                <li key = {name} >{name}</li>
+                            )) }
+                        </ul>
+
+                        <button onClick={handleClick}>ಥ_ಥ {compteur}</button>
+
+                    </div>
+                )
+              }
+
+              ReactDOM.render(<Home />, app);
             </script>
     </body>
 </html>
